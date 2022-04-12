@@ -9,6 +9,8 @@ import {
 export const VALID_UNITS = [
   ScaleUnits[''],
   Units.px,
+  Units.vh,
+  Units.vw,
   Units['%'],
   RotationUnits.deg,
   RotationUnits.turn,

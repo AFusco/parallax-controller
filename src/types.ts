@@ -33,6 +33,10 @@ export enum ValidCSSEffects {
 export enum Units {
   'px' = 'px',
   '%' = '%',
+  'vh' = 'vh',
+  'vw' = 'vw',
+  'em' = 'em',
+  'rem' = 'rem',
 }
 export type ValidUnits = keyof typeof Units;
 

@@ -13,6 +13,14 @@ export function getStartEndValueInPx(
     const scale = elementSize / 100;
     start = start * scale;
     end = end * scale;
+  } else if (unit === 'vh') {
+    const scale = document.documentElement.clientHeight / 100;
+    start = start * scale;
+    end = end * scale;
+  } else if (unit === 'vw') {
+    const scale = document.documentElement.clientWidth / 100;
+    start = start * scale;
+    end = end * scale;
   }
 
   return {

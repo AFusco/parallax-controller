@@ -9,6 +9,8 @@ import {
 export const VALID_UNITS = [
   ScaleUnits[''],
   Units.px,
+  Units.vh,
+  Units.vw,
   Units['%'],
   RotationUnits.deg,
   RotationUnits.turn,
@@ -40,6 +42,8 @@ export function parseValueAndUnit(
 
   // @ts-ignore
   out.unit = str.match(/[\d.\-+]*\s*(.*)/)[1] || defaultUnit;
+
+  return out;
 
   // @ts-expect-error
   const isValidUnit: boolean = VALID_UNITS.includes(out.unit);
